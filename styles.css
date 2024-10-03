@@ -4,6 +4,12 @@
 }
 
 :root {
+  --color-bg: #385c34;
+  --color-bg-accent: #451a03;
+
+  --color-text: #fff;
+  --color-primary-1: #bda79e;
+  --color-primary-2: #87736a;
 }
 
 *,
@@ -21,12 +27,13 @@ html {
 
 body {
   font-size: 1.6rem;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 .main {
   display: grid;
   grid-template-columns: 40% auto;
-  column-gap: 5rem;
   height: 100dvh;
 }
 
@@ -34,30 +41,27 @@ body {
 .link:visited {
   display: inline-block;
   text-decoration: none;
-  color: white;
+  color: var(--color-primary-1);
 
   transition: all 0.4s;
 }
 
 .link:hover,
 .link:active {
-  color: red;
+  color: var(--color-primary-2);
 }
 
 .container-aside {
   position: relative;
-  height: 100%;
-
-  .background {
-    width: 100%;
-    height: auto;
-  }
+  background-image: url("/img/background2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .container-logo {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 0;
-    transform: translateY(-50%);
 
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1.5rem 0.5rem;
@@ -92,4 +96,14 @@ body {
     justify-content: center;
     gap: 0.5rem;
   }
+}
+
+.form {
+  background-color: #385c34;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

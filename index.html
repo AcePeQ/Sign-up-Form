@@ -28,6 +28,7 @@
               id="firstName"
               name="first_name"
               placeholder="Enter your first name..."
+              required
             />
           </div>
           <div class="input-row">
@@ -37,6 +38,7 @@
               id="lastName"
               name="last_name"
               placeholder="Enter your last name..."
+              required
             />
           </div>
           <div class="input-row">
@@ -46,6 +48,7 @@
               id="email"
               name="email"
               placeholder="Enter your email..."
+              required
             />
           </div>
           <div class="input-row">
@@ -55,6 +58,7 @@
               id="phoneNumber"
               name="phone_number"
               placeholder="Enter your phone number..."
+              required
             />
           </div>
 
@@ -65,7 +69,10 @@
               id="password"
               name="password"
               placeholder="Enter your password..."
+              required
+              class="input_password"
             />
+            <p class="password_error">* Passwords do not match</p>
           </div>
           <div class="input-row">
             <label for="confirmPassword">Confirm Password</label>
@@ -74,6 +81,8 @@
               id="confirmPassword"
               name="confirm_password"
               placeholder="Confirm your password..."
+              required
+              class="input_confirmPassword"
             />
           </div>
         </div>
